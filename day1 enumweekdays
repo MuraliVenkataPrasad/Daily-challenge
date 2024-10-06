@@ -1,0 +1,25 @@
+
+public class Enum {
+    enum Days{
+        sunday,
+        monday,
+        tuesday,
+        wednesday,
+        thursday,
+        friday,
+        saturday
+    }
+
+    public static void main(String[] args) {
+        for(Days d:Days.values()){
+            weekend(d);
+        }
+    }
+    private static void weekend(Days d){
+        if(d.equals(Days.sunday)){
+            System.out.println("value="+d+"is a holiday");
+        }
+        else
+        System.out.println("value="+d+"is a working day");
+    }
+}
