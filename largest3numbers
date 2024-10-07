@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class largestnumbers {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the total no of elements");
+        int n=sc.nextInt();
+        int[] numbers=new int[n];
+        System.out.println("enter"+n+"numbers");
+        for(int i=0;i<n;i++){
+            numbers[i]=sc.nextInt();
+        }
+        Arrays.sort(numbers);
+        System.out.println("the largest three numbers are ");
+        for(int i=n-1;i>=n-3;i--){
+            System.out.println(numbers[i]);
+        }
+    }
+}
+
+output:
+
+enter the total no of elements
+5
+enter5numbers
+10
+20
+30
+40
+50
+the largest three numbers are 
+50
+40
+30
